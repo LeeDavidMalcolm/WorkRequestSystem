@@ -34,9 +34,9 @@ public class WorkRequestFactoryTest {
     public void getWorkRequest_IdAndTime_SetsIdAndEnqueuedTime(){
 
         final long id = 123;
-        final LocalDateTime time = LocalDateTime.now();
+        final LocalDateTime time = LocalDateTime.now().plusHours(1);
 
-        final WorkRequest workRequest = workRequestFactory.getWorkRequest(id);
+        final WorkRequest workRequest = workRequestFactory.getWorkRequest(id, time);
 
         assertEquals(id, workRequest.getId());
         assertEquals(time, workRequest.getEnqueuedTime());
