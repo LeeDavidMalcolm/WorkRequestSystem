@@ -31,6 +31,9 @@ yyyy-MM-ddTHH:mm:ss.SSS e.g. 2017-02-19T14:27:16.024
 To generate Javadocs run the following command: mvn site
 These will be available in the following directory: target/site/apidocs
 
+Unit test coverage is generated with Jacoco as part of the build. After you have followed the Build and run section you will find the report here:
+/target/site/jacoco/index.html
+
 
 ## Logging
 
