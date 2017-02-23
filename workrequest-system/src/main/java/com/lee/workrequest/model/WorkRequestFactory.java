@@ -17,7 +17,7 @@ public class WorkRequestFactory {
      * @param id Requester id
      * @return
      */
-    public WorkRequest getWorkRequest(long id) {
+    public WorkRequest getWorkRequest(final long id) {
         return getWorkRequest(id, LocalDateTime.now());
     }
 
@@ -27,7 +27,7 @@ public class WorkRequestFactory {
      * @param enqueuedTime time {@link WorkRequest} was enqueued
      * @return
      */
-    public WorkRequest getWorkRequest(long id, LocalDateTime enqueuedTime) {
+    public WorkRequest getWorkRequest(final long id, final LocalDateTime enqueuedTime) {
         final boolean idDividesByThree = id % 3 == 0;
         final boolean idDividesByFive = id % 5 == 0;
 

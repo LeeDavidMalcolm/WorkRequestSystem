@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
  */
 public class WorkRequestPriority extends WorkRequestNormal {
 
-    public WorkRequestPriority(long id, LocalDateTime enqueuedTime){
+    public WorkRequestPriority(final long id, final LocalDateTime enqueuedTime){
         super(id, enqueuedTime);
     }
 

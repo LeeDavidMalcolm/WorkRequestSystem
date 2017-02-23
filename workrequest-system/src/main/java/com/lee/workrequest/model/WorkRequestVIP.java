@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
  */
 public class WorkRequestVIP extends WorkRequestNormal {
 
-    public WorkRequestVIP(long id, LocalDateTime enqueuedTime){
+    public WorkRequestVIP(final long id, final LocalDateTime enqueuedTime){
         super(id, enqueuedTime);
     }
 

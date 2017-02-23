@@ -11,7 +11,7 @@ public class WorkRequestNormal implements WorkRequest {
     protected final long id;
     protected LocalDateTime enqueuedTime;
 
-    public WorkRequestNormal(long id, LocalDateTime enqueuedTime){
+    public WorkRequestNormal(final long id, final LocalDateTime enqueuedTime){
         this.id = id;
         this.enqueuedTime = enqueuedTime;
     }

@@ -28,7 +28,7 @@ public class WorkRequestQueue {
      * @param workRequest {@link WorkRequest} to add
      * @return Null if no entry exists for id or the previous value if it does
      */
-    public WorkRequest enqueue(WorkRequest workRequest) {
+    public WorkRequest enqueue(final WorkRequest workRequest) {
         return workRequests.putIfAbsent(workRequest.getId(), workRequest);
     }
 
@@ -93,7 +93,7 @@ public class WorkRequestQueue {
      * @param time to take the duration from
      * @return average wait time in seconds
      */
-    public long getAverageWaitTime(LocalDateTime time){
+    public long getAverageWaitTime(final LocalDateTime time){
 
         long totalDuration = 0;
         for (final Map.Entry<Long, WorkRequest> entry : workRequests.entrySet()) {

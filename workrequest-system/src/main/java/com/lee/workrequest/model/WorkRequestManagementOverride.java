@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
  */
 public class WorkRequestManagementOverride extends WorkRequestNormal {
 
-    public WorkRequestManagementOverride(long id, LocalDateTime enqueuedTime){
+    public WorkRequestManagementOverride(final long id, final LocalDateTime enqueuedTime){
         super(id, enqueuedTime);
     }
 

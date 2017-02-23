@@ -93,7 +93,7 @@ public class WorkRequestController {
         return responseEntity;
     }
 
-    private ResponseEntity<List<Long>> handleGetIds(HttpStatus responseStatus){
+    private ResponseEntity<List<Long>> handleGetIds(final HttpStatus responseStatus){
         final List<Long> sortedIds = workRequestService.getSortedIds();
 
         if(sortedIds.isEmpty()){
@@ -103,7 +103,7 @@ public class WorkRequestController {
         }
     }
 
-    private ResponseEntity<List<WorkRequest>> handleGetWorkRequests(HttpStatus responseStatus){
+    private ResponseEntity<List<WorkRequest>> handleGetWorkRequests(final HttpStatus responseStatus){
         final List<WorkRequest> sortedWorkRequests = workRequestService.getSortedWorkRequests();
 
         if(sortedWorkRequests.isEmpty()){

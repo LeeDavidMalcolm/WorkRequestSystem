@@ -24,7 +24,7 @@ public class WorkRequestService {
     private final WorkRequestFactory workRequestFactory;
     private final WorkRequestQueue workRequestQueue;
 
-    public WorkRequestService(WorkRequestFactory workRequestFactory, WorkRequestQueue workRequestQueue){
+    public WorkRequestService(final WorkRequestFactory workRequestFactory, final WorkRequestQueue workRequestQueue){
         this.workRequestFactory = workRequestFactory;
         this.workRequestQueue = workRequestQueue;
     }
